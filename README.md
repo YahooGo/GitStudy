@@ -54,5 +54,9 @@
 `git branch -d bug` ==》 删除bug分支
 
 
+## 新建项目 工作流
 
+> master分支 正式版本
+
+> dev分支 开发版本
 
