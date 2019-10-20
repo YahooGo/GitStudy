@@ -49,7 +49,7 @@
 
 `git checkout dev` ==》 切换dev分支
 
-`git merge bug` ==》 合并分支
+`git merge bug` ==》 合并bug分支 --- merge 后+ 需要需要被合并的分支， 将bug分支合并到当前分支
 
 `git branch -d bug` ==》 删除bug分支
 
