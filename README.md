@@ -33,7 +33,20 @@
 > 版本区域
 
 
-## 
+## 回滚功能
+
+`git reset` + `--head` + `版本号`
+`git log` 查看版本
+`git reflog` 查看所有版本功能
+
+
+## 分支
+`git branch` ==》 master 主分支
+`git branch dev` ==》 创建dev分支
+`git checkout dev` ==》 切换dev分支
+`git merge bug` ==》 合并分支
+`git branch -d bug` ==》 删除bug分支
+
 
 
 
