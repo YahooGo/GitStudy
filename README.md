@@ -58,5 +58,55 @@
 
 > master分支 正式版本
 
+正式版只保留稳定版本
+线上master只允许marge 线上dev分支 且master不允许手动修改代码不允许直接提交代码
+
 > dev分支 开发版本
+
+开发版本进行大量分支操作，稳定后merge到开发版
+
+## 远程仓库操作
+
+> 为远程仓库起别名
+
+`git remote add origin 远程仓库地址`
+
+> 向远程仓库推送
+
+`git push -u origin 分支名称`
+
+> 拉取代码 克隆
+
+`git clone 远程仓库地址` ===> 内部已实现`git remote add origin 远程仓库`
+
+> 分支切换
+
+`git checkout 分支`
+
+## 开发流程
+> master 绝对不能随意修改
+
+> dev开发环境 
+- 使用dev环境merge master分支 `git merge master` 
+- 此时dev分支为最新分支
+- 此时开发dev环境， 通过`git commit -m 信息`提交到本地dev环境
+- 将本地dev环境推送到向上dev环境
+- 将本地代码更新 `git pull origin dev`
+
+## 开发完毕上线
+- `git checkout master` 切换为master分支
+- `git merge dev` 合并dev分支
+- `git push origin master` 推送代码
+
+## 推送dev环境
+- `git checkout dev` 切换dev分支
+- `git merge master` 合并master分支
+- `git push origin dev` 推送开发环境
+
+
+
+
+
+
+
 
