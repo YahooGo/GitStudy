@@ -115,4 +115,8 @@
 > 情景2： dev分支开发后，master分支被合并过.
 1. 此时切换master分支 `git merge dev`
 
+2. 先切回dev分支 `git rebase master` 将dev分支変基 为一条主线分支
+ 
+
+
 > 这是分支dev
