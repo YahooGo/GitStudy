@@ -118,7 +118,8 @@
 2. 先切回dev分支 `git rebase master` 将dev分支変基 为一条主线分支
  
 > 情景3： 
-
+1. 当同时修改同一个文件时，rebase时会出现错误冲突。
+此时当解决错误后，`git add .`冲突文件，此时处于rebase中断状态，暂存后`git rebase --continue`继续合并。
 
 > 这是分支dev
 > 这是分支2
