@@ -103,8 +103,10 @@
 - `git merge master` 合并master分支
 - `git push origin dev` 推送开发环境
 
+## 补充命令
+`git pull origin dev` 从线上dev环境拉取代码 = `git fetch origin dev` + `git merge origin/dev`
 
-
+## rebease 変基
 
 
 
