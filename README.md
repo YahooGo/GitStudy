@@ -112,9 +112,7 @@
 
 > 情景1：本地分支 多次commit 合并为一次 `git rebase -i HEAD~3` ~3为最近3次
 
-> 情景2： dev分支开发后，master分支被合并过.
+> 情景2： dev分支开发后，mauster分支被合并过.
 1. 此时切换master分支 `git merge dev`
-
-
 
 
